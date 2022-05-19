@@ -16,6 +16,7 @@ boxplot(Score ~ as.factor(Gender) + as.factor(Genre), data = movie)
 movie.lm = lm(Score ~ as.factor(Gender) + as.factor(Genre), data = movie)
 anova(movie.lm)
 summary(movie.lm)$coefficients
+
 # Yi = µ + αi + βj + γij + εi
 # Yi = score response
 # µ = overall mean
